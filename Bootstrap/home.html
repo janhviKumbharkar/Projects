@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Go Vegan</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Go-Vegan</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="/Home.html ">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/about.html">About Us</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							Veganism
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="/Foodordering.html">Why Vegan?</a></li>
+							<li><a class="dropdown-item" href="/homedelivery.html">Becoming Vegan</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="/help.html">Vegan Living</a></li>
+							
+
+
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="/contact.html">Contact</a>
+					</li>
+
+				</ul>
+				<form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-danger" type="submit">Search</button>
+				</form>
+				<div class="mx-2">
+					<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+					
+					<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">signup</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+  
+  <!--  Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="Get Go-Vegan account" id="loginModalLabel">login and Go-Vegan </h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<form>
+				<div class="mb-3">
+				  <label for="exampleInputEmail1" class="form-label">Email address</label>
+				  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+				</div>
+				<div class="mb-3">
+				  <label for="exampleInputPassword1" class="form-label">Password</label>
+				  <input type="password" class="form-control" id="exampleInputPassword1">
+				</div>
+				<div class="mb-3 form-check">
+				  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+				  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			  </form> 
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		  
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+  
+  <!--signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="Get Go-Vegan account" id="signupModalLabel"> Go-Vegan account</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<form class="row g-3">
+				<div class="col-md-6">
+				  <label for="inputEmail4" class="form-label">Email</label>
+				  <input type="email" class="form-control" id="inputEmail4">
+				</div>
+				<div class="col-md-6">
+				  <label for="inputPassword4" class="form-label">Password</label>
+				  <input type="password" class="form-control" id="inputPassword4">
+				</div>
+				<div class="col-12">
+				  <label for="inputAddress" class="form-label">Address</label>
+				  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+				</div>
+				<div class="col-12">
+				  <label for="inputAddress2" class="form-label">Address 2</label>
+				  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+				</div>
+				<div class="col-md-6">
+				  <label for="inputCity" class="form-label">City</label>
+				  <input type="text" class="form-control" id="inputCity">
+				</div>
+				<div class="col-md-4">
+				  <label for="inputState" class="form-label">State</label>
+				  <select id="inputState" class="form-select">
+					<option selected>Choose...</option>
+					<option>...</option>
+				  </select>
+				</div>
+				<div class="col-md-2">
+				  <label for="inputZip" class="form-label">Zip</label>
+				  <input type="text" class="form-control" id="inputZip">
+				</div>
+				<div class="col-12">
+				  <div class="form-check">
+					<input class="form-check-input" type="checkbox" id="gridCheck">
+					<label class="form-check-label" for="gridCheck">
+					  Check me out
+					</label>
+				  </div>
+				</div>
+				<div class="col-12">
+				  <button type="submit" class="btn btn-primary">Sign in</button>
+				</div>
+			  </form>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+	<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+				aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+				aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+				aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="img-fluid" src="https://source.unsplash.com/wSh0Exrb62g/1400x400" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h2>Go-Vegan</h2>
+					<p>Veganism is not a sacrifice. It is a joy</p>
+					<button type="button" class="btn btn-warning">Donate</button>
+					<button type="button" class="btn btn-danger">Contact</button>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img class="img-fluid" src="https://source.unsplash.com/pRKDJZWNUvY/1400x400" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h2>Eat healthy - Live healthy</h2>
+					<p>It’s not hard to make decisions once you know what your values are.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img class="img-fluid" src="https://source.unsplash.com/07nSacnmdlM/1400x400" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h2>Save lives - Animals are here with us, not for us</h2>
+					<p>All life deserves respect, dignity, and compassion. All life</p>
+				</div>
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+			data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+			data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+	<div class="container my-4 ">
+		<div class="px-4 py-5 my-5 text-center">
+			<img class="d-block mx-auto mb-4 img-fluid" src="https://ih1.redbubble.net/image.316733915.5074/flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg" alt="" width="200" height="200">
+			<h1 class="display-5 fw-bold">Hello there!</h1>
+			<div class="col-lg-6 mx-auto">
+			  <p class="lead mb-4">We’re an all-volunteer team that provides online and in-person education to those interested in the vegan way of life. Our founders incorporated Gentle World as a non-profit organization over 40 years ago, and they themselves became vegan more than 50 years ago, before they even knew there was a word for it.
+			  Our organization has shared countless hours of vegan education, as well as publishing hundreds of enticing vegan recipes, and establishing educational centers in India.</p>
+			  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+				<button type="button" class="btn btn-primary btn-lg px-4 gap-3">More About Us</button>
+				<button type="button" class="btn btn-outline-secondary btn-lg px-4">Join</button>
+			  </div>
+			</div>
+		  </div>
+		<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+			<div class="col-10 col-sm-8 col-lg-6">
+			  <img class="img-fluid" src="https://veganfeministnetwork.com/wp-content/uploads/2013/09/Cow-and-baby-cow.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="600" height="600" loading="lazy">
+			</div>
+			<div class="col-lg-6">
+			  <h1 class="display-5 fw-bold lh-1 mb-3">INDIA IS READY TO GO MEATLESS</h1>
+			  <p class="lead">Veganism is gaining increasing adoption in recent years not just because of animal cruelty but also due to related concerns on environment, antibiotic resistance, zoonotic diseases and health.With a rise in awareness around the ill-effects of meat eating, people across the world are gradually adopting plant-based diets.</p>
+			  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+				<button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Features</button>
+				<button type="button" class="btn btn-outline-secondary btn-lg px-4">Whats new</button>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row featurette d-flex jusify-content-center align-items-center">
+			<div class="col-md-7 order-md-2">
+			  <h2 class="featurette-heading fw-normal lh-1">Change what you eat! <span class="text-muted">Be kind to every kind</span></h2>
+			  <p class="lead">A vegan lifestyle prevents a tremendous amount of animal slaughter and suffering. It offers a potent way to shrink our environmental footprint, especially in regard to climate change. And a well-planned vegan diet can fuel the highest levels of fitness, while reducing our risk of various chronic diseases.</p>
+			</div>
+			<div class="col-md-5 order-md-1">
+				<img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto img-fluid" src="https://source.unsplash.com/mVPpRr9K0jk/500x500"  alt="">
+			 
+	  
+			</div>
+		  </div>
+		  <div class="container px-4 py-5" id="custom-cards">
+			<h2 class="pb-2 border-bottom">Celebrities who supports VEGANISM</h2>
+		
+			<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+			  <div class="col">
+				<div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd26agCosVdg6OVDr5XDAoIWIm2uHNMTwTAA&usqp=CAU');">
+				  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+					<h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">It takes nothing from a human to be kind to an animal.</h2>
+					<ul class="d-flex list-unstyled mt-auto">
+					  <li class="me-auto">
+						<img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy8VyVMLVq8Ui8JoGsc6_Cu77vFmc5cfqtOQ&usqp=CAU" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+					  </li>
+					  <li class="d-flex align-items-center me-3">
+						<svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+						<small>joaquin phoenix</small>
+					  </li>
+					  <li class="d-flex align-items-center">
+						<svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+						<small>3d</small>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+		
+			  <div class="col">
+				<div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMo6zNCA3v0riVaEZV_FEBgavtfV6Ubw5l7Q&usqp=CAU');">
+				  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+					<h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">"If you knew how meat was raised you wouldnt eat it"</h2>
+					<ul class="d-flex list-unstyled mt-auto">
+					  <li class="me-auto">
+						<img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJVajoV9xnaSbhjQEGtr-71u9YUQUuRi5Z9w&usqp=CAU" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+					  </li>
+					  <li class="d-flex align-items-center me-3">
+						<svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+						<small>Justin Timberlake</small>
+					  </li>
+					  <li class="d-flex align-items-center">
+						<svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+						<small>4d</small>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+		
+			  <div class="col">
+				<div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkqPLfj9ZvhT93SiD9XXKMMk3-CFgHXgEu0g&usqp=CAU');">
+				  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+					<h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Please don’t refuse with your eyes what the animals endure with their bodies</h2>
+					<ul class="d-flex list-unstyled mt-auto">
+					  <li class="me-auto">
+						<img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeGAaXeu9rLYVmvgjAC2fUVaeFKI2-KTI6CA&usqp=CAU" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+					  </li>
+					  <li class="d-flex align-items-center me-3">
+						<svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+						<small>Billie Eilish</small>
+					  </li>
+					  <li class="d-flex align-items-center">
+						<svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+						<small>5d</small>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	<footer class="py-3 my-4">
+		<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+		  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+		  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+		  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+		  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+		  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+		</ul>
+		<p class="text-center text-muted">© 2022 Company, Inc</p>
+	  </footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
+
