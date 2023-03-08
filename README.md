@@ -20,8 +20,7 @@ These are the websites I have built while practicing html and css.
 
 
 
-Some other basic practice projects.
-* links 
+Some other basic practice projects
 
 Bootstrap : https://jk-bootstrap.netlify.app
 
